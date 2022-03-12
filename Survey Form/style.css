@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+}
+p{
+    font-size: 16px;
+}
+main::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: auto;
+    opacity: 0.6;
+}
+body{
+    background: #9370DB;
+    opacity: 0.9;
+    height: 100vh;
+}
+
+/*Welcome section*/
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    white-space: nowrap;
+}
+.main-text, .main-para-text{
+    color: #fff;
+    margin: 10px 0;
+    z-index: 2;
+    display: inline-block;
+}
+
+/*Form section*/
+.main-questionnaire{
+    background: #000;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+label{
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    z-index: 99;
+    font-weight: bold;
+}
+.name-container, .email-container, .age-container, .current-role-container, .recommendation-container, 
+.feature-container, .improvement-container, .comments-container{
+     padding: 20px 40px;
+}
+input[type = text], input[type = email], input[type = number], datalist, textarea{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+input[type = radio], input[type = checkbox]{
+    transform: scale(1.5);
+    margin-bottom: 13px;
+    border-radius: 2px;
+}
+textarea{
+    height: 100px;
+}
+#role, #feature{
+    margin-top: 20px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+#op1{
+    margin-top: 12px;
+}
+#option-1{
+    margin-top: 12px;
+}
+.footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0 auto;
+}
+.form-btn{
+    margin-top: 20px;
+    width: 100%;
+    background: #03c03c;
+    padding: 5px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*Media Queries*/
+@media (max-width: 465px){
+    h1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
